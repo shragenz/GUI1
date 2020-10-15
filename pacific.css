@@ -1,0 +1,137 @@
+/*
+	File: cs.uml.edu/~sgillis/HW3/pacific.css
+	91.61 GUI Programming I Assignment: Style a Site with External CSS
+	Sean T. Gillis, UMass Lowell Computer Science, Sean_Gillis1@student.uml.edu
+	Copyright (c) 2020 by Sean T. Gillis. All rights reserved.
+	created by Sean T. Gillis on September 20, 2020 at 2:03 PM
+
+	This CSS file contains style information for
+	cs.uml.edu/~sgillis/HW3/index.html
+*/
+
+/* Added a color gradient to the background of the page. */
+body {
+	background: linear-gradient(to bottom, #ffffff 0%, #00569f 100%);
+	background-repeat: no-repeat;
+	background-color: #00569f;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* Added the dark blue background and sunset image to the page title. */
+h1 {
+	color: white;
+	margin: 0px;
+	padding: 10px;
+	background-image: url('sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgb(0, 0, 50);
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+nav {
+	float: left;
+	width: 200px;
+}
+
+nav ul {
+	font-size: 1.2em;
+	padding-left: 20px;
+}
+
+nav li{
+	list-style-type: none;
+	font-weight: bold;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+dt {
+	color: #000033;
+}
+
+/*
+	Set the position, width, and style of the footer text to fit the
+	wrapper area.
+*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 12px;
+	float: left;
+	margin-left: 200px;
+	width: calc(100% - 220px);
+	padding-left: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+}
+
+.resort{
+	color: #3399CC;
+	font-weight: bold;
+}
+
+/*
+	Set the width and position of the main area of the page. Also set the
+	background color of the nav section by setting the background color
+	of the wrapper.
+*/
+#wrapper {
+	width: 80%;
+	min-width: 600px;
+	margin-left: 10%;
+	background-color: powderblue;
+	overflow: auto;
+}
+
+/*
+	Set the width and position of the main content of the page to fill
+	the wrapper area.
+*/
+#content {
+	float: left;
+	width: calc(100% - 200px);
+	background: white;
+}
+
+#content img {
+	margin: 30px;
+	margin-top: 0px;
+	float: left;
+}
+
+/* replaced the bullets of the list with marker gifs */
+#content li {
+	list-style-image: url('marker.gif');
+	list-style-position: inside;
+}
+
+#content h2, #content p, #content ul, #content #contact {
+	margin-left: 30px;
+}
+
+#contact {
+	font-size: 90%;
+	background-color: white;
+}
