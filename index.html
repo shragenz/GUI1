@@ -1,0 +1,151 @@
+<!--
+    File: cs.uml.edu/~sgillis/index.html
+    91.61 GUI Programming I Assignment: Creating Your First Web Page
+    Sean T. Gillis, UMass Lowell Computer Science, Sean_Gillis1@student.uml.edu
+    Copyright (c) 2020 by Sean T. Gillis. All rights reserved.
+    created by Sean T. Gillis on September 7, 2020 at 4:01 PM
+
+    This webpage contains information about me and my experience in the field
+    of computer science. It also acts as a home page for all of my future GUI I
+    homework assignments.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sean Gillis Home</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!--
+            The title panel contains the title of the webpage and an image of me.
+        -->
+        <div class="titlepanel">
+            <h1>Sean Gillis</h1>
+            <img src="profile_pic.jpg" alt="Profile Picture">
+        </div>
+
+        <!--
+            the navigation panel contains links to future assignments. Currently
+            they return a page not found error because I have not completed any
+            other assignments yet.
+        -->
+        <div class="navpanel">
+            <a href="HW3/index.html" target="_blank">Homework 3</a><br>
+            <a href="HW4/GUI_HW4.html" target="_blank">Homework 4</a><br>
+            <a href="HW5/GUI_HW5.html" target="_blank">Homework 5</a><br>
+            <a href="HW6/GUI_HW6.html" target="_blank">Homework 6</a><br>
+            <a href="HW7/GUI_HW7.html" target="_blank">Homework 7</a><br>
+            <a href="HW8/GUI_HW8.html" target="_blank">Homework 8</a><br>
+        </div>
+
+        <!--
+            The main content of the homepage is contained in a number of main panels.
+            This main panel contains an h2 heading describing the panel's content, followed
+            by information in a paragraph format.
+        -->
+        <div class="mainpanel">
+            <h2>My Education:</h2>
+            <p>
+                Bachelor of Science in Computer Science, Minor in Mathematics<br>
+                University of Massachusetts Lowell, Lowell, MA
+            </p>
+        </div>
+
+        <!--
+            All other main panels have an h2 heading describing the content of the
+            panel, followed by a number of h3 subheadings that break the content
+            into sections. Each section contains an unorder list of information.
+        -->
+        <div class="mainpanel">
+            <h2>My Skills:</h2>
+
+            <h3>Programming Languages:</h3>
+            <ul>
+                <li>Experienced with C and C++</li>
+                <li>Profiecient with Python, x86, and MIPS</li>
+                <li>Familiar with HTML, CSS, and Visual Basic</li>
+            </ul>
+
+            <h3>Software Experience:</h3>
+            <ul>
+                <li>Windows (GUI and CLI), Ubuntu Linux (GUI and CLI), PowerShell</li>
+                <li>PuTTy, Virtual Box, Qt, SFML, SDL, OpenSSL</li>
+                <li>Tortoise SVN, Git</li>
+            </ul>
+
+            <h3>Coursework:</h3>
+            <ul>
+                <li>Data Structures, Object Oriented Programming, Parallel Programming, Assembly Language</li>
+                <li>Logic, Discrete Mathematics, Linear Algebra</li>
+            </ul>
+        </div>
+
+
+        <div class="mainpanel">
+            <h2>My Work Experience:</h2>
+
+            <h3>Software Engineer - ZOLL Medical, Chelmsford, MA (January 2020 - Present)</h3>
+            <ul>
+                <li>Developed an application for downloading, editing, and saving .INI files to and from a defibrillator</li>
+                <li>Implemented, unit tested, and reviewed changes to code in a version controlled system</li>
+            </ul>
+
+            <h3>Cashier - Stop and Shop, Westborough, MA (July 2016 - July 2017 | June 2018 - August 2018 | August 2019)</h3>
+            <ul>
+                <li>Aided customers and satisfied needs with friendly and efficient service</li>
+                <li>Controlled a variety of unique and crucial tasks simultaneously</li>
+            </ul>
+        </div>
+
+
+        <div class="mainpanel">
+            <h2>My Projects:</h2>
+
+            <h3>Synchronous Post Office Simulation (November 2019)</h3>
+            <ul>
+                <li>Created a multithreaded program wherein ‘sender’ threads take turns sending random objects to randomly selected<br>
+                  ‘receiver’ threads through a single shared buffer </li>
+                <li>Implemented in C++, fully synchronized using mutual exclusivity lock mechanisms</li>
+            </ul>
+
+            <h3>Reversible Image Encryption (February 2019)</h3>
+            <ul>
+                <li>Developed a program that accepts a .png file and a password, which is used to scramble the pixels of the file,<br>
+                  resulting in a new encrypted image that resembles television static</li>
+                <li>If the user resubmits the encrypted .png file with the same password, the program will return the original, unscrambled image</li>
+                <li>Implemented in C++ using SFML libraries, compiled through Ubuntu command line</li>
+            </ul>
+
+            <h3>Evil Hangman (February 2018 - May 2018)</h3>
+            <ul>
+                <li>Created a cheating hangman program that guarantees each game will require as many guesses as possible, no matter<br>
+                  what letter the user guesses each turn</li>
+                <li>Implemented in C using an AVL tree of custom vector structures containing custom string structures, debugged with a<br>
+                  unit test framework, compiled through Ubuntu command line</li>
+            </ul>
+        </div>
+
+        <!--
+            The footer class just contains style information for the copyright
+            message and the validation sticker that displays at the bottom of the page.
+
+            This image is from http://jigsaw.w3.org/css-validator
+        -->
+        <div class="footer">
+
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+
+            <h6>Copyright (c) 2020 by Sean T. Gillis. All rights reserved.</h6>
+        </div>
+    </body>
+</html>
