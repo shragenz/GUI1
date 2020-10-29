@@ -1,0 +1,51 @@
+/*
+    File: GUI_HW5.css
+    91.61 GUI Programming I Assignment: Creating an Interactive Dynamic Table
+    Sean T. Gillis, UMass Lowell Computer Science, Sean_Gillis1@student.uml.edu
+    Copyright (c) 2020 by Sean T. Gillis. All rights reserved.
+    created by Sean T. Gillis on October 22, 2020 at 6:17 PM
+
+    This file contains information for styling elements in GUI_HW5.html
+*/
+
+body
+{
+    background-color: lightgray
+}
+
+input
+{
+    width: 75px;
+}
+
+#roundingTip, #complexTip
+{
+    margin: 5px 0px;
+    font-size: 12px;
+}
+
+#inputSection, #tableSection
+{
+    border: solid black 1px;
+    margin: 10px 20px;
+    padding: 20px 50px;
+    display: inline-block;
+    background-color: white;
+}
+
+#myTable
+{
+    border-style: none;
+}
+
+#tip
+{
+    margin: 0px;
+}
+
+#create
+{
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%
+}
