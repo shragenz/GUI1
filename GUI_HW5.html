@@ -1,0 +1,63 @@
+<!--
+    File: GUI_HW5.html
+    91.61 GUI Programming I Assignment: Creating an Interactive Dynamic Table
+    Sean T. Gillis, UMass Lowell Computer Science, Sean_Gillis1@student.uml.edu
+    Copyright (c) 2020 by Sean T. Gillis. All rights reserved.
+    created by Sean T. Gillis on October 22, 2020 at 6:17 PM
+
+    This webpage allows the visitor to create an interactive
+    multiplication table using parameters they input themself. The page is
+    styled with an external style sheet and the table is generate by an
+    external javascript.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Table</title>
+        <link rel="stylesheet" href="GUI_HW5.css">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <!--
+        The input section contains the fields where the user inputs
+        The parameters that are used to create the table. This section also
+        contains the button that runs the script that generates the table.
+    -->
+    <body>
+        <div id="inputSection">
+            <table>
+                <th>X Axis Values:</th>
+                <tr>
+                    <td>From:</td>
+                    <td><input type="number" id="xfrom" value="0"></td>
+                </tr>
+                <tr>
+                    <td>To:</td>
+                    <td><input type="number" id="xto" value="0"></td>
+                </tr>
+                <th>Y Axis Values:</th>
+                <tr>
+                    <td>From:</td>
+                    <td><input type="number" id="yfrom" value="0"></td>
+                </tr>
+                <tr>
+                    <td>To:</td>
+                    <td><input type="number" id="yto" value="0"></td>
+                </tr>
+            </table>
+
+            <input type="button" id="create" value="GENERATE TABLE" onclick="createTable()">
+        </div>
+        <br>
+
+        <!--
+            The table is inserted into the table section upon creation. Error
+            message are also displayed within the table section.
+        -->
+        <div id="tableSection">
+            <p id="tip">Use the form above to create a table</p>
+        </div>
+    </body>
+</html>
