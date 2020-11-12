@@ -1,0 +1,70 @@
+/*
+    File: GUI_HW6.css
+    91.61 GUI Programming I Assignment: Using the jQuery Validation Plugin with
+    Your Dynamic Table
+    Sean T. Gillis, UMass Lowell Computer Science, Sean_Gillis1@student.uml.edu
+    Copyright (c) 2020 by Sean T. Gillis. All rights reserved.
+    created by Sean T. Gillis on November 8, 2020 at 5:12 PM
+
+    This file contains information for styling elements in GUI_HW6.html
+*/
+
+body
+{
+    background-color: lightgray
+}
+
+input
+{
+    border: 1px solid black;
+    width: 75px;
+}
+
+/* style inputs when an error occurs */
+input.error
+{
+  background-color: tomato;
+  color: white;
+}
+
+/* style error messages */
+label.error
+{
+    border: 1px solid tomato;
+    padding: 1px 5px;
+    font-weight: bold;
+    color: tomato;
+    margin-left: 10px;
+}
+
+#roundingTip
+{
+    margin: 5px 0px;
+    font-size: 12px;
+}
+
+#inputSection, #tableSection
+{
+    border: solid black 1px;
+    margin: 10px 20px;
+    padding: 20px 50px;
+    display: inline-block;
+    background-color: white;
+}
+
+#myTable
+{
+    border-style: none;
+}
+
+#tip
+{
+    margin: 0px;
+}
+
+#create
+{
+    margin-top: 5px;
+    padding: 10px;
+    width: 200px;
+}
