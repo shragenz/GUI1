@@ -1,0 +1,61 @@
+/*
+    File: style.css
+    91.61 GUI Programming I Assignment: Implementing a Bit of Scrabble with
+    Drag-and-Drop (with Extra Credits)
+    Sean T. Gillis, UMass Lowell Computer Science, Sean_Gillis1@student.uml.edu
+    Copyright (c) 2020 by Sean T. Gillis. All rights reserved.
+    created by Sean T. Gillis on December 2, 2020 at 1:54 PM
+
+    This webpage is a web app that allows the user to play a miniature game of
+    Scrabble. This is implimented using tiles that can be dragged and dropped,
+    each with point values that are tallied as the game progresses
+*/
+
+.tile
+{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    background-size: 100% 100%;
+}
+
+.space
+{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+}
+
+#scrabbleBoard .space
+{
+    background-color: rgb(255, 255, 80);
+}
+
+#scrabbleBoard .space.double
+{
+    background-color: rgb(80, 80, 255);
+}
+
+#scrabbleBoard
+{
+    width: 100%;
+}
+
+#tileRack
+{
+    display: inline-block;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 30px;
+    background-image: url("scrabble-tile-holder.png");
+    background-size: 100% 100%;
+}
+
+h1, p
+{
+    margin: 5px;
+}
